@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+.bg{
+<!-- background-image:url('bg1.jpeg');  -->
+<!--  filter: blur(3px);
+  -webkit-filter: blur(3px); -->
+}
+.container {
+  padding: 16px;
+  color:white;
+  
+  background: rgba(0, 0, 0, 0.4);
+ 
+}
+
+button {
+  background-color: #1569C7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+body {font-family: Arial, Helvetica, sans-serif;
+border: 0px solid black;
+margin:auto;
+margin-top:20px;
+margin-bottom:20px;
+
+padding:10px;
+width:50%;
+height:40%;
+text-align:center;
+
+ 
+
+
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+<!--   background: rgba(0, 0, 0, 0.2); -->
+  color:white;
+  font-size:20px;
+  
+}
+</style>
+</head>
+
+<body style="background-image:url('bg1.jpeg	')" >
+<div class="bg"></div>
+
+<form action="admin_login.php" method="POST">
+ 
+  
+  <div class="container" >
+  <h1 style="text-align:center;color:white">Admin Log In</h1>
+    <label for="uname" style="float:left"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+	
+    <label for="psw" style="float:left"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	 <button type="submit" style="background-color:green">Login</button>
+	 
+    
+  </div>
+
+</body>
+</html>
